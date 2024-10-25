@@ -21,9 +21,6 @@ jobs:
       with:
         deno-version: v1.x
 
-    - name: Cache Deno modules
-      run: deno cache main.ts
-
     - name: Build project
       run: deno bundle main.ts build/bundle.js
 
